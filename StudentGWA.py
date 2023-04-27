@@ -26,7 +26,7 @@ with open("StudentsName&GWA.txt") as input_student_file:
         # Convert GWA to float
         GWA = float(record[1])
         # Check the highest grade
-        if GWA > highest_GWA:
+        if GWA < highest_GWA:
             highest_GWA = GWA
             name_of_the_highest_student = students_name
 
