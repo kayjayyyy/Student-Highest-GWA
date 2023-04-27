@@ -29,3 +29,6 @@ with open("StudentsName&GWA.txt") as input_student_file:
         if GWA > highest_GWA:
             highest_GWA = GWA
             name_of_the_highest_student = students_name
+
+# Print the highest GWA and the student name
+print(name_of_the_highest_student, highest_GWA)
