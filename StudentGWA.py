@@ -30,5 +30,21 @@ with open("StudentsName&GWA.txt") as input_student_file:
             highest_GWA = GWA
             name_of_the_highest_student = students_name
 
+input("\033[3m♥ Press enter to print the student who got the highest GWA\033[0m")
+
+print("")
+print("-" * 70)
+print("\033[1;3;34mWill print the student with highest GWA....\033[0m".center(80))
+print("-" * 70)
+print("")
+
 # Print the highest GWA and the student name
-print(name_of_the_highest_student, highest_GWA)
+print("\033[32;3mName of the student:\033[0m", name_of_the_highest_student)
+print("\033[32;3mGWA:\033[0m", highest_GWA)
+
+# Outro and border line
+print("\n")
+print("\033[3mThank you for supporting our program!".center(70))
+print("")
+print("\033[35m※ \033[0m" * 35)
+print("")
