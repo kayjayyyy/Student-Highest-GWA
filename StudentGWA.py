@@ -19,4 +19,13 @@ name_of_the_highest_student = ""
 
 # Open StudentsName&GWA.txt (read)
 with open("StudentsName&GWA.txt") as input_student_file:
-    
+    # Process the loop of the program
+    for line in input_student_file:
+        record = line.split(",")
+        students_name = record[0]
+        # Convert GWA to float
+        GWA = float(record[1])
+        # Check the highest grade
+        if GWA > highest_GWA:
+            highest_GWA = GWA
+            name_of_the_highest_student = students_name
